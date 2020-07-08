@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.full-height {
+    height: 100vh;
+}
+
+
+
+
+.nestoOmeni {
+    color: #20bc8d;
+    text-align: center;
+}
+
+.heading-line {
+    width: 7%;
+    height: 2px;
+    background-color: #20bc8d;
+    margin: 20px auto;
+}
+
+
+#navToggle{
+    position: relative;
+    margin: 15px; 
+    font-size: 26px;
+    display: block;
+    cursor: pointer;
+}
+#sm-menu{
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: #ff4747;
+    z-index: 1;
+    border-bottom: 2px solid white;
+}
+#sm-menu-content{
+    display: none;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+#sm-menu-content ul{
+    list-style-type: none;
+}
+#sm-menu-content ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+#zaglavlje {
+    background-image: url('mostar_hd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    color: white;
+}
+
+#header-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#header-text h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+#header-text h4 {
+    font-size: 26px;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+#nav-and-me {
+    background-color: #20bc8d;
+    text-align: center;
+    padding: 30px;
+}
+
+#nav-and-me ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+#nav-and-me ul li {
+    display: inline;
+}
+
+#nav-and-me ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#nav-and-me ul li a:hover {
+    background-color: white;
+    color: #20bc8d;
+}
+
+#profile_picture {
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+
+
+
+#o-meni {
+    text-align: center;
+    padding: 0 35px;
+}
+
+#o-meni h1 {
+    margin: 0;
+}
+
+#o-meni-text {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+
+#percentage-skills {
+    padding: 25px 40px;
+    background-color: #20bc8d;
+}
+
+#percentage-skills h1 {
+    text-align: center;
+    color: white;
+}
+
+.skill-container p {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.skill-percente {
+    height: 15px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 5px 0 20px 0;
+}
+
+
+
+#portofolio::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.item {
+    width: calc(33.3% - 10px);
+    height: 250px;
+    margin: 10px 5px;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+#contact {
+    background-color: #e6e8ed;
+    padding: 35px 20px;
+}
+
+#contact-content {
+    width: 60%;
+    margin: 20px auto;
+}
+
+form input,
+textarea {
+    background-color: transparent;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 13px 20px;
+}
+
+form input {
+    width: 45.5%;
+}
+form input:hover{
+    border: #20bc8d solid 1px;
+}
+form textarea {
+    width: 96%;
+}
+form textarea:hover{
+    border: #20bc8d solid 1px;
+}
+form input:nth-child(1) {
+    margin-right: 4.5%;
+}
+
+#sendButton {
+    text-transform: uppercase;
+    font-size: 18px;
+    width: auto;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    background-color: #20bc8d;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+
+#footer {
+    background-color: #20bc8d;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+#footer i {
+    font-size: 22px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+
+#error {
+    border: 1px solid red;
+}
+#error-ime{
+    color: red;
+    font-weight: bold;
+}
+
+#error-email{
+    color: red;
+    font-weight: bold;
+}
+
+#error-text{
+    color: red;
+    font-weight: bold;   
+}

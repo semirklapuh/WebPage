@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>O meni</title>
+    <link rel="stylesheet" href="css.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"> <!-- Koristen za ubacivanje ikona drusvenih mreza u footer -->
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <div id="main-container">
+        <div id="sm-menu">
+            <div id="sm-menu-content">
+                <ul>
+                    <li>
+                        <a href="#main-container">Naslovna</a>
+                    </li>
+                    <li>
+                        <a href="#o-meni">O meni</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portofolio">Portofolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="#footer">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="zaglavlje" class="full-height">
+            <div id="header-text">
+                <h2>Semir Klapuh</h2>
+            </div>
+        </div>
+        <div id="nav-and-me">
+            <ul>
+                <li>
+                    <a href="#main-container">Naslovna</a>
+                </li>
+                <li>
+                    <a href="#header">O meni</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#portofolio">Portofolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Kontakt</a>
+                </li>
+                <li>
+                    <a href="#footer">Blog</a>
+                </li>
+            </ul>
+            <img id="profile_picture" src="profile_pic.jpg" alt="Profile picture">
+            <h1 style="color:white; margin-top: 0;">Semir Klapuh</h1>
+            <h4 style="color: white">Student - Developer</h4>
+        </div>
+        <div id="header"></div>
+        <div id="o-meni">
+            <div class="heading-line"></div>
+            <h1 class="nestoOmeni">NEŠTO O MENI</h1>
+            <p style="color: #20bc8d"> <b>Student Fakulteta Informacijskih Tehnologija - Mostar </b></p>
+
+            <p id="o-meni-text">
+            
+                Zovem se Semir Klapuh. Dolazim iz Goražda. <br>
+                Završio sam srednju tehničku školu Hasib Hadžović u Goraždu. <br>
+                Zbog velikog velikog interesovanja za informacione tehnologije, upisao sam fakultet informacijskih tehnologija u Mostaru.
+                I mislim da ce mi biti velika odskočna daska u nastavku karijere.
+                Student sam II godine i najviše se zanimam za web razvoj i razvoj web aplikacija.   <br>  <br>
+                <br>
+
+                Uvijek sam kolegijalan i volim raditi u timu na projektima, jer tako se najlakše dođe do originalnih ideja u razvoju softvera.
+               
+            </p>
+            </div>
+            <div id="skills"></div>
+            <div id="percentage-skills">
+                <div class="heading-line" style="background-color: white;"></div>
+                <h1>SKILLS</h1>
+                <div class="skill-container">
+                    <p>Html (95%)</p>
+                    <div class="skill-percente" style="width:95%"></div>
+                </div>
+                <div class="skill-container">
+                    <p>CSS (85%)</p>
+                    <div class="skill-percente" style="width:85%"></div>
+                </div>
+                <div class="skill-container">
+                    <p>Javascript (75%)</p>
+                    <div class="skill-percente" style="width:75%"></div>
+                </div>
+                <div class="skill-container">
+                    <p>C++ (90%)</p>
+                    <div class="skill-percente" style="width:90%"></div>
+                </div>
+            </div>
+            <div id="portofolio">
+                <div class="heading-line"></div>
+                <h1 style="color:#20bc8d; text-align: center">PORTOFOLIO</h1>
+                
+                <div id="portofoli-it">
+                    <div class="item" style="background-image: url('gorazde.jpg');"></div>
+                </div>
+                <div id="portofoli-it">
+                    <div class="item" style="background-image: url('fit.jpg');"></div>
+                </div>
+                <div id="portofoli-it">
+                    <div class="item" style="background-image: url('mostar.jpg');"></div>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="heading-line"></div>
+                <h1 style="color:#20bc8d; text-align: center">NAPIŠI PORUKU</h1>
+                <div id="contact-content">
+                    <form>
+                        <input type="text" name="Name" id="name" placeholder="Ime i prezime" onblur="validateIme()">
+                        <input type="email" id="email" name="email" placeholder="Email" onblur="validateEmail()">
+                        <textarea name="message" id="text" rows="10" placeholder="Upišite tekst vaše poruke" onblur="validateText()"></textarea>
+                        <label id="error-ime"></label>
+                        <label id="error-email"></label>
+                        <label id="error-text"></label>
+                        <input type="submit" value="POŠALJI" id="sendButton" onclick="return validateForm()">
+                    </form>
+                </div>
+            </div>
+            <div id="footer">
+                <p>&#169; 2018 - All rights reserved</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-dribbble"></i>
+                </div>
+            </div>
+</body>
+</html>
